@@ -1,10 +1,8 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import axios from 'axios';
-import FsLightbox from 'fslightbox-react';
 import React, { useEffect, useState } from 'react';
 import * as Icon from 'react-feather';
-import ProgressiveImage from 'react-progressive-image';
 import Slider from 'react-slick';
 import Layout from '../components/Layout';
 import Sectiontitle from '../components/Sectiontitle';
@@ -12,7 +10,6 @@ import Service from '../components/Service';
 import Testimonial from '../components/Testimonial';
 
 function About() {
-  const [toggler, setToggler] = useState(false);
   const [information, setInformation] = useState('');
   const [services, setServices] = useState([]);
   const [reviews, setReviews] = useState([]);
@@ -39,12 +36,6 @@ function About() {
     ],
   };
 
-  const handleToggler = () => {
-    setToggler({
-      toggler: !toggler,
-    });
-  };
-
   useEffect(() => {
     document.title = 'Ashley Pean - About';
     axios.get('/api/information').then((response) => {
@@ -66,19 +57,10 @@ function About() {
           <div className="row">
             <div className="col-lg-6">
               <div className="mi-about-image">
-                <ProgressiveImage
-                  src={information.aboutImage}
-                  placeholder="/images/about-image-placeholder.png"
-                >
-                  {(src) => <img src={src} alt="aboutimage" onClick={() => handleToggler(!toggler)} />}
-                </ProgressiveImage>
+                <img src={information.aboutImage} alt="logo" />
                 <span className="mi-about-image-icon">
                   <Icon.ZoomIn />
                 </span>
-                <FsLightbox
-                  toggler={toggler}
-                  sources={[information.aboutImageLg]}
-                />
               </div>
             </div>
             <div className="col-lg-6">

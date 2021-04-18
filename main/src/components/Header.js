@@ -1,13 +1,24 @@
-import React, { useState } from 'react';
+import axios from 'axios';
+import React, { useEffect, useState, useContext } from 'react';
 import LineIcon from 'react-lineicons';
 import { NavLink } from 'react-router-dom';
+import ThemeContext from '../Global/ThemeContext';
 
 function Header() {
+  const [information, setInformation] = useState('');
   const [navigationToggler, setNavigationToggler] = useState(false);
+  const lightMode = useContext(ThemeContext);
 
   const handleNavigationToggler = () => {
     setNavigationToggler(!navigationToggler);
   };
+
+  useEffect(() => {
+    axios.get('/api/information')
+      .then((response) => {
+        setInformation(response.data);
+      });
+  }, []);
 
   return (
     <nav className={navigationToggler ? 'mi-header is-visible' : 'mi-header'}>
@@ -16,7 +27,7 @@ function Header() {
       </button>
       <div className="mi-header-inner">
         <div className="mi-header-image">
-          <div style={{ height: 150 }} />
+          <img src={lightMode ? information.brandImageLight : information.brandImageDark} alt="Brand logo" />
         </div>
 
         <ul className="mi-header-menu">
