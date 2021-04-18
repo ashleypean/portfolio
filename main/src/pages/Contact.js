@@ -5,9 +5,8 @@ import Sectiontitle from '../components/Sectiontitle';
 import Layout from '../components/Layout';
 
 function Contact() {
-  const [phoneNumbers, setPhoneNumbers] = useState([]);
   const [emailAddress, setEmailAddress] = useState([]);
-  const [address, setAddress] = useState([]);
+  const [socialLinks, setSocialLinks] = useState({});
   const [formdata, setFormdata] = useState({
     name: '',
     email: '',
@@ -42,10 +41,10 @@ function Contact() {
       [event.currentTarget.name]: event.currentTarget.value,
     });
   };
-  const numberFormatter = (number) => {
-    const phnNumber = number;
-    return phnNumber;
-  };
+  // const numberFormatter = (number) => {
+  //   const phnNumber = number;
+  //   return phnNumber;
+  // };
 
   const handleAlerts = () => {
     if (error && message) {
@@ -67,9 +66,8 @@ function Contact() {
   useEffect(() => {
     axios.get('/api/contactinfo')
       .then((response) => {
-        setPhoneNumbers(response.data.phoneNumbers);
         setEmailAddress(response.data.emailAddress);
-        setAddress(response.data.address);
+        setSocialLinks(response.data.socialLinks);
       });
   }, []);
 
@@ -108,21 +106,6 @@ function Contact() {
             </div>
             <div className="col-lg-6">
               <div className="mi-contact-info">
-                {!phoneNumbers ? null : (
-                  <div className="mi-contact-infoblock">
-                    <span className="mi-contact-infoblock-icon">
-                      <Icon.Phone />
-                    </span>
-                    <div className="mi-contact-infoblock-content">
-                      <h6>Phone</h6>
-                      {phoneNumbers.map((phoneNumber) => (
-                        <p key={phoneNumber}>
-                          <a href={numberFormatter(phoneNumber)}>{phoneNumber}</a>
-                        </p>
-                      ))}
-                    </div>
-                  </div>
-                )}
                 {!emailAddress ? null : (
                   <div className="mi-contact-infoblock">
                     <span className="mi-contact-infoblock-icon">
@@ -136,14 +119,21 @@ function Contact() {
                     </div>
                   </div>
                 )}
-                {!phoneNumbers ? null : (
+                {!socialLinks ? null : (
                   <div className="mi-contact-infoblock">
                     <span className="mi-contact-infoblock-icon">
-                      <Icon.MapPin />
+                      <Icon.Globe />
                     </span>
                     <div className="mi-contact-infoblock-content">
-                      <h6>Address</h6>
-                      <p>{address}</p>
+                      <h6>Social Media</h6>
+                      {Object.keys(socialLinks).map((platform) => (
+                        <p>
+                          <a href={socialLinks[platform]} target="_blank" rel="noreferrer">
+                            {platform}
+                          </a>
+                        </p>
+
+                      ))}
                     </div>
                   </div>
                 )}
