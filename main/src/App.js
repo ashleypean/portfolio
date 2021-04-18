@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import * as Icon from 'react-feather';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.scss';
-import About from './pages/About';
 import BlogDetails from './pages/BlogDetails';
 import Blogs from './pages/Blogs';
 import Contact from './pages/Contact';
@@ -50,7 +49,6 @@ function App() {
           <Route path="/" exact>
             <Home lightMode={lightMode} />
           </Route>
-          <Route path="/about" component={About} />
           <Route path="/resume" component={Resumes} />
           <Route path="/portfolios" component={Portfolios} />
           <Route path="/blog" exact component={Blogs} />

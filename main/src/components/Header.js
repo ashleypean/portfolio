@@ -27,12 +27,11 @@ function Header() {
       </button>
       <div className="mi-header-inner">
         <div className="mi-header-image">
-          <img src={lightMode ? information.brandImageLight : information.brandImageDark} alt="Brand logo" />
+          <img src={lightMode ? information.brandImageLight : information.brandImageDark} alt="Brand logo" style={{ height: 200, width: 200 }} />
         </div>
 
         <ul className="mi-header-menu">
           <li><NavLink exact to="/"><span>Home</span></NavLink></li>
-          <li><NavLink to="/about"><span>About</span></NavLink></li>
           <li><NavLink to="/resume"><span>Resume</span></NavLink></li>
           <li><NavLink to="/portfolios"><span>Portfolio</span></NavLink></li>
           <li><NavLink to="/blog"><span>Blog</span></NavLink></li>
