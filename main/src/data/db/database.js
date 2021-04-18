@@ -60,32 +60,92 @@ const database = {
       },
     },
   ],
-  skills: [
-    {
-      title: 'HTML5',
-      value: 95,
-    },
-    {
-      title: 'CSS3',
-      value: 90,
-    },
-    {
-      title: 'Javascript',
-      value: 70,
-    },
-    {
-      title: 'jQuery',
-      value: 85,
-    },
-    {
-      title: 'ReactJS',
-      value: 80,
-    },
-    {
-      title: 'Photoshop',
-      value: 65,
-    },
-  ],
+  skills: {
+    frontend: [
+      {
+        title: 'Bootstrap',
+        logo: 'devicon-bootstrap-plain colored',
+      },
+      {
+        title: 'D3',
+        logo: 'devicon-d3js-plain colored',
+      },
+      {
+        title: 'React',
+        logo: 'devicon-react-original colored',
+      },
+      {
+        title: 'Redis',
+        logo: 'devicon-redis-plain colored',
+      },
+      {
+        title: 'Redux',
+        logo: 'devicon-redux-original colored',
+      },
+      {
+        title: 'Sass',
+        logo: 'devicon-sass-original colored',
+      },
+    ],
+    languages: [
+      {
+        title: 'TypeScript',
+        logo: 'devicon-typescript-plain colored',
+      },
+      {
+        title: 'JavaScript',
+        logo: 'devicon-javascript-plain colored',
+      },
+    ],
+    backend: [
+      {
+        title: 'Express',
+        logo: 'devicon-express-original colored',
+      },
+      {
+        title: 'GraphQL',
+        logo: 'devicon-graphql-plain colored',
+      },
+      {
+        title: 'MongoDB',
+        logo: 'devicon-mongodb-plain colored',
+      },
+      {
+        title: 'Next.js',
+        logo: 'devicon-nextjs-original colored',
+      },
+      {
+        title: 'Node.js',
+        logo: 'devicon-nodejs-plain colored',
+      },
+      {
+        title: 'Postgres',
+        logo: 'devicon-postgresql-plain colored',
+      },
+      {
+        title: 'Sequelize',
+        logo: 'devicon-sequelize-plain colored',
+      },
+    ],
+    tools: [
+      {
+        title: 'AWS',
+        logo: 'devicon-amazonwebservices-original colored',
+      },
+      {
+        title: 'Docker',
+        logo: 'devicon-docker-plain colored',
+      },
+      {
+        title: 'Figma',
+        logo: 'devicon-figma-plain colored',
+      },
+      {
+        title: 'Webpack',
+        logo: 'devicon-webpack-plain colored',
+      },
+    ],
+  },
   portfolios: [
     {
       id: 1,
@@ -273,47 +333,29 @@ const database = {
     workingExperience: [
       {
         id: 1,
-        year: '2018 - Present',
-        position: 'Frontend Web Developer',
-        company: 'Abc Company',
-        details: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.',
+        year: '2021 - 2021',
+        position: 'Volunteer Frontend Web Developer',
+        company: 'Black Valley',
       },
       {
         id: 2,
-        year: '2016 - 2018',
-        position: 'Frontend Web Developer',
-        company: 'CBA Company',
-        details: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.',
-      },
-      {
-        id: 3,
-        year: '2014 - 1016',
-        position: 'UI/UX Designer',
-        company: 'Example Company',
-        details: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.',
+        year: '2021 - Present',
+        position: 'Frontend Developer Intern',
+        company: 'Mark43',
       },
     ],
     educationExperience: [
       {
         id: 1,
-        year: '2018 - 2019',
-        graduation: 'Master of Science',
-        university: 'Abc University',
-        details: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.',
+        year: '2016 - 2016',
+        graduation: 'Associates in Economics',
+        university: 'Palm Beach State University',
       },
       {
         id: 2,
-        year: '2016 - 2018',
-        graduation: 'Bachelor of Science',
-        university: 'Abc University',
-        details: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.',
-      },
-      {
-        id: 3,
-        year: '2015 - 2016',
-        graduation: 'Higher Schoold Graduation',
-        university: 'Abc College',
-        details: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.',
+        year: '2020 - 2021',
+        graduation: 'Bacher of Arts - Psychology',
+        university: 'Florida Atlantic Unversity',
       },
     ],
   },

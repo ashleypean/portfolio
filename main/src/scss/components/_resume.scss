@@ -2,7 +2,43 @@
  * Resume 
  */
 
+ .mi-skills-options {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   flex-wrap: wrap;
+   margin: 1rem;
+ }
+
+ .skill-block {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+  margin: 2rem 3rem;
+
+  @media #{$layout-tablet} {
+    margin: 2rem 1rem;
+  }
+
+  @media #{$layout-mobile-sm} {
+    margin: 2rem .5rem;
+  }
+ }
+
+ .skill-icon-image {
+   font-size: 3rem;
+ }
+
+ .skill-title {
+   font-size: 1.2rem;
+ }
+
 .mi-resume {
+  &-download {
+    margin: 5rem 0 5rem;
+  }
+
   &-wrapper {
     border-left: 3px solid $color-border;
   }
