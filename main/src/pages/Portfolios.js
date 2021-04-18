@@ -11,6 +11,10 @@ function Portfolios() {
   const [portfoliosPerPage] = useState(9);
 
   useEffect(() => {
+    document.title = 'Ashley Pean - Portfolio';
+  });
+
+  useEffect(() => {
     let mounted = true;
     axios.get('/api/portfolios').then((response) => {
       if (mounted) {
@@ -38,7 +42,7 @@ function Portfolios() {
     <Layout>
       <div className="mi-about mi-section mi-padding-top mi-padding-bottom">
         <div className="container">
-          <Sectiontitle title="Portfolios" />
+          <Sectiontitle title="Portfolio" />
           <PortfoliosView portfolios={currentPortfolios} />
           {!(portfolios.length > portfoliosPerPage) ? null : (
             <Pagination

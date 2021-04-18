@@ -13,6 +13,7 @@ function Resumes() {
   const [educationExperience, setEducationExperience] = useState([]);
 
   useEffect(() => {
+    document.title = 'Ashley Pean - Resume';
     axios.get('/api/skills')
       .then((response) => {
         setSkills(response.data);

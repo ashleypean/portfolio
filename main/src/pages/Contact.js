@@ -41,10 +41,6 @@ function Contact() {
       [event.currentTarget.name]: event.currentTarget.value,
     });
   };
-  // const numberFormatter = (number) => {
-  //   const phnNumber = number;
-  //   return phnNumber;
-  // };
 
   const handleAlerts = () => {
     if (error && message) {
@@ -64,6 +60,7 @@ function Contact() {
   };
 
   useEffect(() => {
+    document.title = 'Ashley Pean - Contact';
     axios.get('/api/contactinfo')
       .then((response) => {
         setEmailAddress(response.data.emailAddress);

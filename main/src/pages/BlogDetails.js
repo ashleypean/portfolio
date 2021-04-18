@@ -6,19 +6,35 @@ import React, { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown/with-html';
 import Layout from '../components/Layout';
 
-function BlogDetails({ id: blogId, title: blogFile }) {
+function BlogDetails({ match }) {
   const [content, setContent] = useState('');
+  console.log('MATCH', match);
+  const {
+    params: {
+      id: blogId,
+      title: blogFile,
+    },
+  } = match;
+  console.log(blogId, blogFile);
 
   useEffect(() => {
-    const fileString = `../blog/${blogFile}.md`;
+    document.title = `Ashley Pean - Blog - ${blogFile}`;
+  });
+
+  useEffect(() => {
+    const fileString = require(`../blog/${blogFile}.md`);
+    console.log('FILESTRING', fileString);
     axios
-      .get(require(fileString))
+      .get(fileString)
       .then((result) => {
+        console.log('RESULTS', result);
         setContent(result.data);
-      });
+      })
+      .catch((err) => console.log('ERRROR', err));
   }, [content, blogFile]);
 
-  const disqusShortname = 'chester-react'; // found in Disqus.com dashboard
+  // TODO - Change disqus account
+  const disqusShortname = 'ashleypeandev'; // found in Disqus.com dashboard
   const disqusConfig = {
     url: 'https://tf-react-chester.now.sh/', // Homepage link of this site.
     identifier: blogId,

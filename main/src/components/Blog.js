@@ -17,7 +17,7 @@ function Blog({ data }) {
   return (
     <div className="mi-blog">
       <div className="mi-blog-image">
-        <Link to={`blogs/blog-details/${id}/${getNospaceTitle(filesource)}`}>
+        <Link to={`blog/blog-details/${id}/${getNospaceTitle(filesource)}`}>
           <ProgressiveImage
             src={featuredImage}
             placeholder="/images/blog-image-placeholder.png"
@@ -32,7 +32,7 @@ function Blog({ data }) {
       </div>
       <div className="mi-blog-content">
         <h5>
-          <Link to={`blogs/blog-details/${id}/${getNospaceTitle(filesource)}`}>
+          <Link to={`blog/blog-details/${id}/${getNospaceTitle(filesource)}`}>
             {title}
           </Link>
         </h5>

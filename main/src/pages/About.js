@@ -46,6 +46,7 @@ function About() {
   };
 
   useEffect(() => {
+    document.title = 'Ashley Pean - About';
     axios.get('/api/information').then((response) => {
       setInformation(response.data);
     });
@@ -98,6 +99,7 @@ function About() {
                       {information.email}
                     </li>
                   )}
+
                   {!information.freelanceStatus ? null : (
                     <li>
                       <b>Freelance</b>

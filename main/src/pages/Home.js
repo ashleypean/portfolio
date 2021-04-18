@@ -74,6 +74,7 @@ function Home({ lightMode }) {
     },
   };
   useEffect(() => {
+    document.title = 'Ashley Pean - Home';
     axios.get('/api/information')
       .then((response) => {
         setInformation(response.data);

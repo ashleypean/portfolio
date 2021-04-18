@@ -11,6 +11,10 @@ function Blogs() {
   const [postsPerPage] = useState(6);
 
   useEffect(() => {
+    document.title = 'Ashley Pean - Blog';
+  }, []);
+
+  useEffect(() => {
     let mounted = true;
     axios.get('/api/blog').then((response) => {
       if (mounted) {
@@ -35,7 +39,7 @@ function Blogs() {
     <Layout>
       <div className="mi-about mi-section mi-padding-top mi-padding-bottom">
         <div className="container">
-          <Sectiontitle title="Recent Blogs" />
+          <Sectiontitle title="Recent Blog Posts" />
           <BlogsView blogs={currentPosts} />
           {!(posts.length > postsPerPage) ? null : (
             <Pagination
