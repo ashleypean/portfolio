@@ -88,60 +88,14 @@ function About() {
                   <span className="color-theme">{information.name}</span>
                 </h3>
                 <p>
-                  I am a frontend web developer. I can provide clean code and
-                  pixel perfect design. I also make website more & more
-                  interactive with web animations.
+                  {information.aboutContent}
                 </p>
                 <ul>
-                  {!information.name ? null : (
-                    <li>
-                      <b>Full Name</b>
-                      {' '}
-                      {information.name}
-                    </li>
-                  )}
-                  {!information.age ? null : (
-                    <li>
-                      <b>Age</b>
-                      {' '}
-                      {information.age}
-                      {' '}
-                      Years
-                    </li>
-                  )}
-                  {!information.phone ? null : (
-                    <li>
-                      <b>Phone</b>
-                      {' '}
-                      {information.phone}
-                    </li>
-                  )}
-                  {!information.nationality ? null : (
-                    <li>
-                      <b>Nationality</b>
-                      {' '}
-                      {information.nationality}
-                    </li>
-                  )}
-                  {!information.language ? null : (
-                    <li>
-                      <b>Languages</b>
-                      {' '}
-                      {information.language}
-                    </li>
-                  )}
                   {!information.email ? null : (
                     <li>
                       <b>Email</b>
                       {' '}
                       {information.email}
-                    </li>
-                  )}
-                  {!information.address ? null : (
-                    <li>
-                      <b>Address</b>
-                      {' '}
-                      {information.address}
                     </li>
                   )}
                   {!information.freelanceStatus ? null : (

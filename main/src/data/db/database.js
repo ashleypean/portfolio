@@ -4,19 +4,11 @@ const database = {
   information: {
     name: 'Ashley Pean',
     aboutContent: 'I am a frontend web developer. I can provide clean code and pixel perfect design. I also make website more & more interactive with web animations.',
-    age: 24,
-    phone: '',
-    nationality: 'American',
-    language: 'English, French',
-    email: '',
-    address: '121 King Street, Melbourne, Australia',
+    email: 'pean.ashley@gmail.com',
     freelanceStatus: 'Available',
     socialLinks: {
       twitter: 'https://twitter.com/ashleypeandev',
-      pinterest: '',
-      behance: '',
       linkedin: 'https://www.linkedin.com/in/ashley-pean/',
-      dribbble: '',
       github: 'https://github.com/ashleypean',
     },
     brandImage: '/images/brand-image.jpg',
@@ -462,14 +454,12 @@ const database = {
     },
   ],
   contactInfo: {
-    // phoneNumbers: ['+012-3456-7891', '+012-3456-7892'],
     emailAddress: ['pean.ashley@gmail.com'],
     socialLinks: {
       Twitter: 'https://twitter.com/ashleypeandev',
       LinkedIn: 'https://www.linkedin.com/in/ashley-pean/',
       Github: 'https://github.com/ashleypean',
     },
-    // address: '121 King Street, Melbourne, Victoria 3000, Australia',
   },
 };
 
