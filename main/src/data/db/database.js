@@ -15,7 +15,7 @@ const database = {
     brandImageDark: 'images/darkLogo.png',
     aboutImage: '/images/about-image.jpg',
     aboutImageLg: '/images/about-image-lg.jpg',
-    cvfile: '/files/empty.pdf',
+    cvfile: '/files/resume.pdf',
   },
   services: [
     {
