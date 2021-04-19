@@ -124,7 +124,7 @@ function Contact() {
                     <div className="mi-contact-infoblock-content">
                       <h6>Social Media</h6>
                       {Object.keys(socialLinks).map((platform) => (
-                        <p>
+                        <p key={platform}>
                           <a href={socialLinks[platform]} target="_blank" rel="noreferrer">
                             {platform}
                           </a>

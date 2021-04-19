@@ -3,7 +3,7 @@ import Mock from '../mock';
 const database = {
   information: {
     name: 'Ashley Pean',
-    aboutContent: 'I am a frontend web developer. I can provide clean code and pixel perfect design. I also make websites more & more interactive with web animations.',
+    aboutContent: 'Software Engineer.',
     email: 'pean.ashley@gmail.com',
     socialLinks: {
       twitter: 'https://twitter.com/ashleypeandev',
@@ -349,6 +349,9 @@ const database = {
       Github: 'https://github.com/ashleypean',
     },
   },
+  particleIcons: [
+    '/images/icons/javascript.svg',
+  ],
 };
 
 Mock.onGet('/api/information').reply(() => {
@@ -378,5 +381,10 @@ Mock.onGet('/api/blog').reply(() => {
 
 Mock.onGet('/api/contactinfo').reply(() => {
   const response = database.contactInfo;
+  return [200, response];
+});
+
+Mock.onGet('/api/icons').reply(() => {
+  const response = database.particleIcons;
   return [200, response];
 });

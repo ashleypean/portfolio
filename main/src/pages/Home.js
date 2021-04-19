@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import Particles from 'react-particles-js';
@@ -6,6 +7,7 @@ import Socialicons from '../components/Socialicons';
 
 function Home({ lightMode }) {
   const [information, setInformation] = useState('');
+
   const paramConfig = {
     particles: {
       number: {
@@ -73,6 +75,7 @@ function Home({ lightMode }) {
       },
     },
   };
+
   useEffect(() => {
     document.title = 'Ashley Pean - Home';
     axios.get('/api/information')
@@ -89,9 +92,8 @@ function Home({ lightMode }) {
           <div className="row justify-content-center">
             <div className="col-lg-10 col-12">
               <div className="mi-home-content">
-                <h1>
-                  Hi, I am
-                  <span className="color-theme">{information.name}</span>
+                <h1 className="color-theme">
+                  {information.name}
                 </h1>
                 <p>{information.aboutContent}</p>
                 <Socialicons bordered />
