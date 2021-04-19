@@ -3,62 +3,16 @@ import Mock from '../mock';
 const database = {
   information: {
     name: 'Ashley Pean',
-    aboutContent: 'I am a frontend web developer. I can provide clean code and pixel perfect design. I also make website more & more interactive with web animations.',
+    aboutContent: 'I am a frontend web developer. I can provide clean code and pixel perfect design. I also make websites more & more interactive with web animations.',
     email: 'pean.ashley@gmail.com',
-    freelanceStatus: 'Available',
     socialLinks: {
       twitter: 'https://twitter.com/ashleypeandev',
       linkedin: 'https://www.linkedin.com/in/ashley-pean/',
       github: 'https://github.com/ashleypean',
     },
     brandImage: '/images/logo.png',
-    aboutImage: '/images/about-image.jpg',
-    aboutImageLg: '/images/about-image-lg.jpg',
     cvfile: '/files/resume.pdf',
   },
-  services: [
-    {
-      title: 'Web Design',
-      icon: 'color-pallet',
-      details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod.',
-    },
-    {
-      title: 'Web Development',
-      icon: 'code',
-      details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod.',
-    },
-    {
-      title: 'Mobile Application',
-      icon: 'mobile',
-      details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod.',
-    },
-  ],
-  reviews: [
-    {
-      id: 1,
-      content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita impedit nobis tempore quaerat quibusdam, aliquid maxime tempora.',
-      author: {
-        name: 'Burdette Turner',
-        designation: 'Web Developer, Abc Company',
-      },
-    },
-    {
-      id: 2,
-      content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita impedit nobis tempore quaerat quibusdam.',
-      author: {
-        name: 'Susan Yost',
-        designation: 'Client',
-      },
-    },
-    {
-      id: 3,
-      content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-      author: {
-        name: 'Irving Feeney',
-        designation: 'Fiverr Client',
-      },
-    },
-  ],
   skills: {
     frontend: [
       {
@@ -264,69 +218,6 @@ const database = {
       imageUrl: '/images/portfolio-image-6.jpg',
       largeImageUrl: ['/images/portfolio-image-6-lg.jpg'],
     },
-    {
-      id: 16,
-      title: 'Beautiful Pendrive',
-      subtitle: 'Pendrive with great design & flexible.',
-      imageUrl: '/images/portfolio-image-7.jpg',
-      largeImageUrl: ['/images/portfolio-image-7-lg.jpg'],
-      url: 'https://twitter.com',
-    },
-    {
-      id: 17,
-      title: 'Sticker',
-      subtitle: 'Clip sticker mockup design.',
-      imageUrl: '/images/portfolio-image-8.jpg',
-      largeImageUrl: ['/images/portfolio-image-8-lg.jpg'],
-    },
-    {
-      id: 18,
-      title: 'Packet',
-      subtitle: 'Beautiful packet & product design.',
-      imageUrl: '/images/portfolio-image-9.jpg',
-      largeImageUrl: ['/images/portfolio-image-9-lg.jpg'],
-    },
-    {
-      id: 19,
-      title: 'T-shirt Mockup',
-      subtitle: 'A beautiful t-shirt mockup.',
-      imageUrl: '/images/portfolio-image-1.jpg',
-      largeImageUrl: ['/images/portfolio-image-1-lg.jpg'],
-      url: 'https://dribbble.com',
-    },
-    {
-      id: 20,
-      title: 'Coffee Mug',
-      subtitle: 'Awesome coffee mug design.',
-      imageUrl: '/images/portfolio-image-4.jpg',
-      largeImageUrl: [
-        '/images/portfolio-image-4-lg.jpg',
-        '/images/portfolio-image-4-lg2.jpg',
-      ],
-      url: 'https://facebook.com',
-    },
-    {
-      id: 21,
-      title: 'Tea & Coffee Mug',
-      subtitle: 'Beautiful mug with logo.',
-      imageUrl: '/images/portfolio-image-2.jpg',
-      url: 'https://pinterest.com',
-    },
-    {
-      id: 22,
-      title: 'Pen Holder',
-      subtitle: 'A pen holder with beautiful design.',
-      imageUrl: '/images/portfolio-image-3.jpg',
-      largeImageUrl: ['/images/portfolio-image-3-lg.jpg'],
-      url: '#',
-    },
-    {
-      id: 23,
-      title: 'Mug',
-      subtitle: 'Mug with awesome style',
-      imageUrl: '/images/portfolio-image-5.jpg',
-      largeImageUrl: ['/images/portfolio-image-5-lg.jpg'],
-    },
   ],
   experience: {
     workingExperience: [
@@ -353,7 +244,7 @@ const database = {
       {
         id: 2,
         year: '2020 - 2021',
-        graduation: 'Bacher of Arts - Psychology',
+        graduation: 'Bachelor of Arts - Psychology',
         university: 'Florida Atlantic Unversity',
       },
     ],
@@ -449,51 +340,6 @@ const database = {
       createMonth: 'February',
       createYear: '2020',
     },
-    {
-      id: 11,
-      title: 'How to get 10k instagram followers?',
-      featuredImage: '/images/blog-image-2.jpg',
-      filesource: '../../blog/how-to-get-10k-instagram-followers.md',
-      createDay: '20',
-      createMonth: 'February',
-      createYear: '2020',
-    },
-    {
-      id: 12,
-      title: 'What NodeJS can do?',
-      featuredImage: '/images/blog-image-3.jpg',
-      filesource: '../../blog/what-nodejs-can-do.md',
-      createDay: '20',
-      createMonth: 'February',
-      createYear: '2020',
-    },
-    {
-      id: 13,
-      title: 'Futures of javascript.',
-      featuredImage: '/images/blog-image-4.jpg',
-      filesource: '../../blog/future-of-javascript.md',
-      createDay: '20',
-      createMonth: 'February',
-      createYear: '2020',
-    },
-    {
-      id: 14,
-      title: 'Popular javascript library in 2020.',
-      featuredImage: '/images/blog-image-5.jpg',
-      filesource: '../../blog/popular-javascript-library-in-2020.md',
-      createDay: '20',
-      createMonth: 'February',
-      createYear: '2020',
-    },
-    {
-      id: 15,
-      title: 'Promrammers must read books.',
-      featuredImage: '/images/blog-image-6.jpg',
-      filesource: '../../blog/programmers-must-read-books.md',
-      createDay: '20',
-      createMonth: 'February',
-      createYear: '2020',
-    },
   ],
   contactInfo: {
     emailAddress: ['pean.ashley@gmail.com'],
@@ -507,16 +353,6 @@ const database = {
 
 Mock.onGet('/api/information').reply(() => {
   const response = database.information;
-  return [200, response];
-});
-
-Mock.onGet('/api/services').reply(() => {
-  const response = database.services;
-  return [200, response];
-});
-
-Mock.onGet('/api/reviews').reply(() => {
-  const response = database.reviews;
   return [200, response];
 });
 
