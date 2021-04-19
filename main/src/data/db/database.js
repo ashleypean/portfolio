@@ -14,6 +14,16 @@ const database = {
     cvfile: '/files/resume.pdf',
   },
   skills: {
+    languages: [
+      {
+        title: 'TypeScript',
+        logo: 'devicon-typescript-plain colored',
+      },
+      {
+        title: 'JavaScript',
+        logo: 'devicon-javascript-plain colored',
+      },
+    ],
     frontend: [
       {
         title: 'Bootstrap',
@@ -40,20 +50,10 @@ const database = {
         logo: 'devicon-sass-original colored',
       },
     ],
-    languages: [
-      {
-        title: 'TypeScript',
-        logo: 'devicon-typescript-plain colored',
-      },
-      {
-        title: 'JavaScript',
-        logo: 'devicon-javascript-plain colored',
-      },
-    ],
     backend: [
       {
         title: 'Express',
-        logo: 'devicon-express-original colored',
+        logo: 'devicon-express-original',
       },
       {
         title: 'GraphQL',
