@@ -65,7 +65,7 @@ const database = {
       },
       {
         title: 'Next.js',
-        logo: 'devicon-nextjs-original colored',
+        logo: 'devicon-nextjs-line colored',
       },
       {
         title: 'Node.js',
@@ -223,21 +223,21 @@ const database = {
     workingExperience: [
       {
         id: 1,
-        year: '2021 - 2021',
+        year: '2021 - Present',
         position: 'Volunteer Frontend Web Developer',
         company: 'Black Valley',
       },
       {
         id: 2,
         year: '2021 - Present',
-        position: 'Frontend Developer Intern',
+        position: 'Software Engineer',
         company: 'Mark43',
       },
     ],
     educationExperience: [
       {
         id: 1,
-        year: '2016 - 2016',
+        year: '2016',
         graduation: 'Associates in Economics',
         university: 'Palm Beach State University',
       },
